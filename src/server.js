@@ -49,7 +49,10 @@ const app = express()
 // ==============================
 
 app.use(
-  cors()
+  cors({
+    origin:
+      'https://pennywise-client.vercel.app',
+  })
 )
 
 app.use(
